@@ -46,6 +46,7 @@ public class IndexAction extends BaseAction {
 	@RequestMapping(value = "/index.htm", method = RequestMethod.GET)
 	public String home(@RequestParam(value = "p", defaultValue = "1") long p,
 			ModelMap modelMap) {
+		System.out.println("----------------------");
 		try {
 			modelMap.addAttribute("p", p);
 			modelMap.addAttribute("g_folderId", 0);
